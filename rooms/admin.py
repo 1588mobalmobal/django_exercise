@@ -46,7 +46,7 @@ class RoomAdmin(admin.ModelAdmin):
             "More About Space",
             {"classes": ("collapse",), "fields": ("amenities", "facilities", "rules")},
         ),
-        ("Last Details", {"fields": ("host",)}),
+        ("Last Details", {"fields": ("host", "room_type")}),
     )
 
     # add list ordering
